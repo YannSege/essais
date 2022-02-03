@@ -62,6 +62,10 @@
   #out2(1)
   #########12054#########################################################
   ############ this routine works calling loop defined in function call
+  ############ things i learned in school:
+  ############ always run script before share once in clean environment to prevent 
+  ############ missing variables which had been declared before, but now are
+  ############ not after you changed some things in the script.
   a1<-c("aa","bb","cc","dd","ee","kk","mm")
   a2<-c("ff","bb","hh","aa","bb","kk","ll")
   
@@ -110,10 +114,10 @@ print(a2[k])
 
 ifelse (pos1==1,print("x"),print("nomatch"))
 ifelse (pos1==1,output(pos1,aempty),print("no output"))
-
+    }
+    
 ####### 12056.1: works this way ################
-         }
-test<-"testreturn of loop" 
+#test<-"testreturn of loop" 
 #ifelsetest<-c(a1,a2)
 #ifelse (pos1==1,match<-c(a1,a2),print("no return"))
 #last to receive value
