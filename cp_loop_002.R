@@ -121,9 +121,13 @@ ifelse (pos1==1,output(pos1,aempty),print("no output"))
 #ifelsetest<-c(a1,a2)
 #ifelse (pos1==1,match<-c(a1,a2),print("no return"))
 #last to receive value
+    
+#save loop instance value before reset loop count
 t<-k
+    #reset loop
 k<-1
 
+#here use loop instance value
 ifelse (pos1==1,match(t,a1,a2),0)
 
 # works, value appears in global environment
