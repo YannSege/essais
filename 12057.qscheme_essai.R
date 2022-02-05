@@ -180,7 +180,6 @@ pos<-"dummy" #text within tags
 print(xml_children(xml_children(xml_children(xml_children(sroot))))[28])
 print(xml_children(xml_children(xml_children(xml_children(sroot)))))
 print(xml_children(xml_children(xml_children(sroot))))
-<<<<<<< HEAD
 
 #think to replicate the whole from root?
 
@@ -228,7 +227,6 @@ print(xml_text(pos2))
 #print(sroot$doc)
 
 ###xml_replace(newscheme1[28],.value="BOUNCE")
->>>>>>> b7a69c006458cb5851efb5d13599180794b81eb0
 
 ############################################# from here earlier state #######################
 
