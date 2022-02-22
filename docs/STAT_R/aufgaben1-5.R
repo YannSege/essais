@@ -41,6 +41,12 @@
 # Bei Gruppenarbeiten sollten alle Gruppenmitglieder angegeben sein. Das Dokument sollte nicht mehr als 10 Seiten haben und spätestens bis zum 6. März bei mir per Email abgegeben werden.
 # Viel Erfolg wünscht Online-Dozent Martin B.
 ################################################################################
+# 1. Aus welchen Wurzeln hat sich die Statistik entwickelt? 
+# Die Statistik entwickelte sich aus der Wahrscheinlichkeitstheorie und der Datenerhebung über die Bevölkerung des Staates. 
+################################################################################
+# 2. In welche Gebiete lässt sich Statistik einteilen?
+# ??deskriptive und induktive Statistik?? (bin mir hier nicht sicher)
+################################################################################
 #3.tabelle erstellen
 a<-c("eins","zwei","drei","vier","funf","sechs")
 b<-c(1:6)
@@ -48,7 +54,9 @@ c<-c(seq(1.6,1.85,0.05))
 ns<-c("nominal","ordinal(zensuren)","metrisch(grösze)")
 tab1<-cbind(a,b,c)
 colnames(tab1)<-ns;tab1
-#######################
+
+################################################################################
+
 #4.zeichentypen numerischer variablen
 #4.1.numerisch
 #4.1.1.integer (ganzzahlen)
@@ -66,7 +74,10 @@ char*char
 typeof(int*int)
 typeof(int*dobl)
 #stays same
-#antwort: in numerischen datentypen dürfen NUR zahlen vorkommen.
+#antwort: in numerischen datentypen dürfen NUR zahlen vorkommen. 
+
+################################################################################
+
 #5.statistische kenngröszen
 c<-c(1:7)
 #5.1.mean, numeric double
@@ -109,6 +120,9 @@ e2<-c(seq(1,40,4))
 cbind(d,e,"pos"=d/e,e2,"neg"=d/e2)
 #5.4.2.korrelation
 cbind(d,e,1/d*1/e,e2,1/d*1/e2)
+
+################################################################################
+
 #6.1.häufigkeitstabelle
 f<-sample(1:100,10)
 g<-letters[1:10]
@@ -118,11 +132,32 @@ row.names(h)<-g;h
 n<-sample(1:100,10)
 h<-cbind(f,n)
 row.names(h)<-g;h
+
+#Eine Häufigkeitstabelle gibt die Verteilung eines statistischen Markmals an. 
+#Sie enthält die absolute Häufigkeit, also wie oft eine Beobachtung im Datensatz auftritt, 
+#die relative Häufigkeit, also die absolute Häufigkeit einer Beobachtung im Verhältnis zur Gesamtzahl aller Beobachtungen, 
+#und die kumulierte relative Häufigkeit, also die Summe der relativen Häufigkeiten bis zu der aktuellen Zeile. 
+#Kontingenztabellen vereinen Häufigkeitstabellen mehrerer statistischer Merkmale und erleichtern dadurch 
+#die Suche nach Zusammenhängen zwischen verschiedenen Merkmalen. Sie enthalten absolute oder relative Häufigkeiten.
+
+################################################################################
+
 #7.1.median vs mean s.o. 5.2.1
+
+#Der Median ist gegenüber dem Mittelwert „robust“, d.h. er ist unempfindlicher gegenüber stark abweichenden Werten. 
+#Berechnet man Beispielsweise den Mittelwert des Alters einer Gruppe aus 5 Personen, die 5, 8, 9, 10 und 92 Jahre alt sind ergibt sich als Mittelwert:
+#(5+8+9+10+92)/5 = 24.8. 
+#Der Median hingegen beträgt: 9
+
+################################################################################
+
 #8.streuung
-#werte können um einen mittelwert eng oder weit gestreut sein, d.h. eine durchschnittlich (standard)
-#grosze oder kleine abweichung vom mittelwert aufweisen. je weiter die streuung einer wertesammlung,
-#desto gröszer die relative standardabweichung vom mittelwert.
+#Die Streuung beschreibt, wie sich Beobachtungen um den Mittelwert (arithmetisches Mittel) verteilen. 
+#Man spricht von wenig Streuung, wenn die Beobachtungen in einem kleinen Radius um den Mittelwert liegen. 
+#Man spricht von starker Streuung, wenn sie in einem großen Radius um den Mittelwert liegen.
+
+################################################################################
+
 #9.kovarianz vs. korrelation s. 5.4.
 #9.1.kov: skalenabhängige beziehung zwischen zwei variablen, wenn x+, dann y+
 #9.2.kor: skalenunabhänige lineare beziehung zwischen zwei variablen, wert zwischen -1 und 1
