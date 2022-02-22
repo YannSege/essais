@@ -68,6 +68,13 @@ typeof(int*dobl)
 #stays same
 #antwort: in numerischen datentypen dürfen NUR zahlen vorkommen.
 #5.statistische kenngröszen
+#Ich glaube, dass wir hier nur die verschiedenen Kenngrößen auflisten sollen und sagen ob sie nominal, ordinal oder metrisch sind. also etwa so: 
+#arithmetisches Mittel: metrisch
+#Median: ordinal; metrisch
+#Modus: nominal; ordinal; metrisch
+#Varianz: metrisch
+#Standardabweichung: metrisch
+#Quantile: ordinal; metrisch
 c<-c(1:7)
 #5.1.mean, numeric double
 mean(c)
